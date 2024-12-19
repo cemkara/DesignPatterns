@@ -1,4 +1,5 @@
-﻿using ChainofResponsibility.Models;
+﻿using ChainofResponsibility.ChainofResponsibility;
+using ChainofResponsibility.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,27 +7,26 @@ namespace ChainofResponsibility.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(CustomerProcessViewModel processViewModel)
         {
-            return View();
-        }
+            Employee treasurer = new Treasurer();
+            Employee managerAsistant = new ManagerAsistant();
+            Employee manager = new Manager();
+            Employee director = new Director();
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            treasurer.SetNext(managerAsistant);
+            managerAsistant.SetNext(manager);
+            manager.SetNext(director);
+
+            treasurer.HandleRequest(processViewModel);
+            return View();
         }
     }
 }
