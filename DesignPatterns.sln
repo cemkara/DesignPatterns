@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainofResponsibility", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS", "CQRS\CQRS.csproj", "{16A37817-3280-40EE-8D14-60AF4E5B89EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{877BC973-5390-4B07-A3EB-AF287225DFF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{16A37817-3280-40EE-8D14-60AF4E5B89EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A37817-3280-40EE-8D14-60AF4E5B89EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A37817-3280-40EE-8D14-60AF4E5B89EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877BC973-5390-4B07-A3EB-AF287225DFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877BC973-5390-4B07-A3EB-AF287225DFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877BC973-5390-4B07-A3EB-AF287225DFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877BC973-5390-4B07-A3EB-AF287225DFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

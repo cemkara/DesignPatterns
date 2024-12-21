@@ -7,8 +7,8 @@ public abstract class Plans{
         Content(string.Empty);
     }
     public abstract string PlanType(string type);
-    public abstract int PersonCount(string count);
-    public abstract double Price(string price);
+    public abstract int PersonCount(int count);
+    public abstract double Price(double price);
     public abstract string Resolution(string resolution);
     public abstract string Content(string content);
 }

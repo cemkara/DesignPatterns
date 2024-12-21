@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var users = Model.Users;
+    var products = Model.Products;
+    var orders = Model.Orders;
+}
+
+<h2>Users</h2>
+<ul>
+    @foreach (var user in users)
+    {
+        <li>@user.Name</li>
+    }
+</ul>
+
+<h2>Product</h2>
+<ul>
+    @foreach (var product in products)
+    {
+        <li>@product.Name - @product.Price</li>
+    }
+</ul>
+
+<h2>Orders</h2>
+<ul>
+    @foreach (var order in orders)
+    {
+        <li>@order.User.Name - @order.Product.Name - @order.OrderDate</li>
+    }
+</ul>
