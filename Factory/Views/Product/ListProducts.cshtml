@@ -1,0 +1,15 @@
+﻿@using Factory.DAL.Entities
+@model List<Product>
+
+@{
+    ViewData["Title"] = "ListProducts";
+}
+
+<h2>All Products</h2>
+
+<ul>
+@foreach (var product in Model)
+{
+    <li>@product.Name - @product.Price</li>
+}
+</ul>

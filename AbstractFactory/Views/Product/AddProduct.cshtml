@@ -1,0 +1,19 @@
+﻿<h1>Add Product</h1>
+
+<form asp-action="AddPhysicalProduct" method="post">
+    <h3>Physical Product</h3>
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    <label>Price:</label>
+    <input type="number" name="price" step="0.01" required />
+    <button type="submit">Add Physical Product</button>
+</form>
+
+<form asp-action="AddDigitalProduct" method="post">
+    <h3>Digital Product</h3>
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    <label>Price:</label>
+    <input type="number" name="price" step="0.01" required />
+    <button type="submit">Add Digital Product</button>
+</form>
