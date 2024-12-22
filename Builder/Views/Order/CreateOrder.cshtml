@@ -1,0 +1,12 @@
+﻿@using Builder.Entities
+@model Order
+
+@{
+    ViewData["Title"] = "CreateOrder";
+}
+<h2>Order</h2>
+<ul>
+    <li><strong>Product:</strong> @Model.Products.FirstOrDefault()?.Name</li>
+    <li><strong>Total Amount:</strong> @Model.TotalAmount</li>
+    <li><strong>Shipping Address:</strong> @Model.ShippingAddress.AddressLine1, @Model.ShippingAddress.City, @Model.ShippingAddress.PostalCode</li>
+</ul>

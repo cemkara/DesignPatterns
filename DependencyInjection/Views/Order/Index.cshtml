@@ -1,0 +1,25 @@
+﻿@using DependencyInjection.DAL.Entities
+@model List<Product>
+
+<h2>Select Products for Order</h2>
+<form method="post" asp-action="CreateOrder">
+    @foreach (var product in Model)
+    {
+        <div>
+            <input type="checkbox" name="productIds" value="@product.Id" /> @product.Name - @product.Price
+        </div>
+    }
+    <button type="submit">Place Order</button>
+</form>
+
+.@{
+    var order = ViewData["Order"] as Order;
+    var paymentStatus = ViewData["PaymentStatus"] as string;
+    var shippingInfo = ViewData["ShippingInfo"] as string;
+}
+
+<h2>Order Confirmation</h2>
+<p>Order ID: @order.Id</p>
+<p>Total Amount: @order.TotalAmount</p>
+<p>Payment Status: @paymentStatus</p>
+<p>Shipping Status: @shippingInfo</p>
