@@ -3,21 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainofResponsibility", "ChainofResponsibility\ChainofResponsibility.csproj", "{A1879488-B95E-4A90-B663-4359D5B0CEB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainofResponsibility", "ChainofResponsibility\ChainofResponsibility.csproj", "{A1879488-B95E-4A90-B663-4359D5B0CEB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS", "CQRS\CQRS.csproj", "{16A37817-3280-40EE-8D14-60AF4E5B89EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS", "CQRS\CQRS.csproj", "{16A37817-3280-40EE-8D14-60AF4E5B89EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{877BC973-5390-4B07-A3EB-AF287225DFF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{877BC973-5390-4B07-A3EB-AF287225DFF6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{BABF30E4-7E90-493A-9E93-F0EE5BCDABB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{E74272C4-F302-4EDD-A0FB-BCFCE6D2070B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{E74272C4-F302-4EDD-A0FB-BCFCE6D2070B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{1F079E9C-E6B8-43E7-9B6E-225D2778B552}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{1F079E9C-E6B8-43E7-9B6E-225D2778B552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{15B3C372-CAF3-4BB6-AA8F-E037D387621D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{15B3C372-CAF3-4BB6-AA8F-E037D387621D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{28EFB28F-9781-4DA1-AAB3-A1A2DA1D880F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{28EFB28F-9781-4DA1-AAB3-A1A2DA1D880F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-DomainDriven", "DDD-DomainDriven\DDD-DomainDriven.csproj", "{2F3847CE-9E32-4633-A4E4-16BD1BE2A89F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84C41A03-09A0-4C59-AD2C-B57C0D9CC438}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +64,10 @@ Global
 		{28EFB28F-9781-4DA1-AAB3-A1A2DA1D880F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28EFB28F-9781-4DA1-AAB3-A1A2DA1D880F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28EFB28F-9781-4DA1-AAB3-A1A2DA1D880F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3847CE-9E32-4633-A4E4-16BD1BE2A89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3847CE-9E32-4633-A4E4-16BD1BE2A89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3847CE-9E32-4633-A4E4-16BD1BE2A89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3847CE-9E32-4633-A4E4-16BD1BE2A89F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
